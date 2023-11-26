@@ -1,0 +1,16 @@
+// The Landing Page
+
+.Advance {
+    display: none;
+}
+
+.Advance_option {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+
+    .Advance {
+        display: block;
+    }
+}

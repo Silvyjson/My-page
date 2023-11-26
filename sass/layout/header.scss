@@ -1,0 +1,178 @@
+/* The header */
+
+.Header_section {
+    position: relative;
+    z-index: 1;
+}
+
+.Header_logo {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.Header_links {
+    font-family: $body-font;
+    display: grid;
+    grid-template-columns: 0.3fr repeat(3, 0.5fr) 0.3fr 0.4fr repeat(2, 0.5fr) 0.1fr;
+    padding: 15px 10px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+}
+
+.Header_links a {
+    color: $theme-color;
+    font-size: 12px;
+    text-align: center;
+}
+
+.Header_Dropdown:hover .dropdown1 {
+    display: block;
+}
+
+.Header_Dropdown:hover .dropdown2 {
+    display: block;
+}
+
+.Header_Dropdown:hover .dropdown3 {
+    display: block;
+}
+
+.Dropdown {
+    box-shadow: $box-shadow;
+    background-color: $page-color;
+    display: none;
+    width: auto;
+    padding: 15px 10px;
+    transition: width 0.3s ease;
+}
+
+.Dropdown a {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.Dropdown a:hover {
+    transform: translateX(20px);
+}
+
+/* HAMBUGER SECTION */
+
+.Navsection {
+    display: none;
+}
+
+.Dropdown1 {
+    display: none;
+    width: auto;
+    padding: 15px 10px;
+    transition: width 0.3s ease;
+}
+
+.Dropdown1 a {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.bar_icon--sect {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.dropdown-content {
+    color: $page-color;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+
+.dropdown-content li a,
+.dropdown-content li div {
+    font-family: $body-font;
+    color: $page-color;
+    cursor: pointer;
+}
+
+.dropdown-content li {
+    border-bottom: 3px solid $page-color;
+}
+
+.Dropdown1 {
+    border-top: 3px solid $page-color;
+}
+
+#nav {
+    display: none;
+    background-color: $primary-color;
+    transition: height 0.2s, width 0.1s;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+    clear: both;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.bar {
+    background-color: $theme-color;
+    height: 4px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar1 {
+    width: 25px;
+}
+
+.bar2 {
+    width: 15px;
+}
+
+.menu-icon.open .bar:nth-child(1) {
+    width: 20px;
+    transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+    width: 20px;
+    transform: rotate(45deg) translate(-4px, -4px);
+}
+
+.Header_Dropdown--B {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Header_Dropdown--Btn {
+    display: flex;
+    justify-content: right;
+    border: none;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1110px) {
+    .Header_links {
+        display: grid;
+        grid-template-columns: 0.3fr repeat(3, 0.6fr) 0.3fr 0.6fr 0.7fr 0.8fr 0.2fr;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Navsection {
+        display: block;
+    }
+
+    .Header_section {
+        display: none;
+    }
+}

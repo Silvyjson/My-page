@@ -1,0 +1,41 @@
+/* The body color mode */
+
+body.light_mode {
+    color: $theme-color;
+    background-color: $page-color;
+}
+
+
+body.dark_mode {
+    color: $page-color;
+    background-color: $theme-color;
+
+
+    .Header_links a {
+        color: $page-color;
+    }
+
+    .menu-icon div {
+        background-color: red;
+    }
+
+    .Dropdown {
+        background-color: $theme-color;
+    }
+
+    .Regions p a {
+        color: $page-color;
+    }
+}
+
+.dark_mode--btn,
+.light_mode--btn {
+    border-radius: 30%;
+    border: none;
+    font-size: 15px;
+}
+
+.dark_mode--btn {
+    width: 40px;
+    background-color: $primary-color;
+}

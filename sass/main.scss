@@ -1,0 +1,23 @@
+@import "./abstracts/mixins", "./abstracts/variables";
+
+
+@import "./base/reset", "./base/typography",
+"./base/utilities";
+
+
+@import "./components/forms", "./components/imgs",
+"./components/search";
+
+
+@import "./layout/display",
+"./layout/footer", "./layout/header";
+
+
+@import "./pages/Landing", "./pages/Login", "./pages/marketTrend",
+"./pages/Postproperty", "./pages/Region", "./pages/Register","./pages/verifiedAgent";
+
+
+@import "./themes/theme.scss";
+
+
+@import "./vendors/vendor";

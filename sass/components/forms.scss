@@ -1,0 +1,115 @@
+/* The form section */
+
+.Form_Content {
+    @include Display-style();
+    width: 80%;
+    margin-top: 20px;
+}
+
+.Form_Section {
+    @include Display-style;
+    height: 100%;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.Form_Content--set {
+    margin-top: 20px;
+
+    label {
+        font-weight: $primary-font-weight;
+    }
+}
+
+
+.Form_Content--input {
+    @include input-styles($box-shadow, $primary-width, $input-bg-color, $border);
+    height: $input-height;
+    margin-top: 10px;
+}
+
+.Form_Content--radio {
+    margin-top: 10px;
+}
+
+.textArea {
+    @include input-styles($box-shadow, $primary-width, $input-bg-color, $border);
+    height: 150px;
+    ;
+    margin-top: 10px;
+}
+
+.chooseFile {
+    @include input-styles($box-shadow, $primary-width, $input-bg-color, $border);
+    height: 20px;
+    padding: 5px;
+}
+
+.chooseFile--A {
+    font-size: 10px;
+    color: red;
+}
+
+.Form_Section div select {
+    border: $secondary-color;
+}
+
+
+.Form_Content--Button {
+    background-color: $primary-color;
+    border: $border;
+    border-radius: $border-radius;
+    color: $page-color;
+    height: $button-height;
+    width: $primary-width;
+    margin-top: 20px;
+}
+
+.Form_Content a {
+    color: blue;
+}
+
+.Form_Content a:hover {
+    color: red;
+}
+
+.Form_Content--link {
+    text-align: center;
+    padding: 10px 0;
+
+    a {
+        font-size: 14px;
+    }
+}
+
+.Form_Content--link1 {
+    text-align: right;
+    padding: 7px 0;
+    font-size: 14px;
+}
+
+.password {
+    position: relative;
+}
+
+.showhide_password {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    right: 3%;
+}
+
+.Alert {
+    color: red;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .Form_Section {
+        display: block;
+        margin: 30px;
+        width: 80%;
+        margin-top: 40px;
+    }
+}

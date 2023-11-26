@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afri-Choice Post A Property</title>
+    <link rel="shortcut icon" href="./sass/assets/Image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="light_mode">
+    <header>
+        <section class="Header_section">
+            <div>
+                <img src="./sass/assets/Image/logo.png" alt="Logo" class="Header_logo">
+            </div>
+            <nav class="Header_nav">
+                <div class="Header_links">
+                    <li><a href="landing.html">HOME</a></li>
+                    <li><a href="marketTrend.html">MARKET TREND</a></li>
+                    <li><a href="verifiedAgent.html">VERIFIED AGENTS</a></li>
+                    <li><a href="Postproperty.html">POST A PROPERTY </a></li>
+                    <li><a href="Region.html">REGION</a></li>
+                    <li class="Header_Dropdown">
+                        <a href="#">WHO WE ARE &#X1f53b</a>
+                        <div class="Dropdown dropdown1">
+                            <a href="aboutUs.html">OUR SERVICE</a>
+                            <a href="aboutUs.html">MEDIA</a>
+                            <a href="aboutUs.html">GET IN TOUCH</a>
+                        </div>
+                    </li>
+                    <li class="Header_Dropdown">
+                        <a href="#">FIND PROPERTY &#X1f53b</a>
+                        <div class="Dropdown dropdown2">
+                            <a href="findProperty.html">FOR SALE</a>
+                            <a href="findProperty.html">FOR RENT</a>
+                        </div>
+                    </li>
+                    <li class="Header_Dropdown">
+                        <a href="#">BECOME AN AGENT &#X1f53b</a>
+                        <div class="Dropdown dropdown3">
+                            <a href="Login.html">LOGIN</a>
+                            <a href="Register.html">REGISTER</a>
+                        </div>
+                    </li>
+                    <section class="Color_mode--btn">
+                        <button type="button" onclick="toggleMode()" id="dark_mode" class="dark_mode--btn"> 🌙</button>
+                    </section>
+                </div>
+            </nav>
+        </section>
+        <section class="Navsection">
+            <div>
+                <img src="./sass/assets/Image/logo.png" alt="Logo" class="Header_logo">
+            </div>
+            <nav class="hambuger">
+                <div class="bar_icon--sect">
+                    <div class="menu-icon" onclick="toggleList()" id="bars">
+                        <div class="bar bar1"></div>
+                        <div class="bar bar2"></div>
+                    </div>
+                    <section class="Color_mode--btn">
+                        <button type="button" onclick="toggleMode()" id="dark_mode1" class="dark_mode--btn"> 🌙</button>
+                    </section>
+                </div>
+                <div id="nav" class="nav">
+                    <div class="dropdown-content">
+                        <li><a href="landing.html">HOME</a></li>
+                        <li><a href="marketTrend.html">MARKET TREND</a></li>
+                        <li><a href="verifiedAgent.html">VERIFIED AGENTS</a></li>
+                        <li><a href="Postproperty.html">POST A PROPERTY </a></li>
+                        <li><a href="Region.html">REGION</a></li>
+                        <li class="Header_Dropdown">
+                            <div class="Header_Dropdown--B">
+                                <div onclick="toggleDropdown1()">WHO WE ARE</div>
+                                <button onclick="toggleDropdown1()" class="Header_Dropdown--Btn">&#X1f53b</button>
+                            </div>
+                            <div class="Dropdown1" id="dropdown1B">
+                                <a href="aboutUs.html">OUR SERVICE</a>
+                                <a href="aboutUs.html">MEDIA</a>
+                                <a href="aboutUs.html">GET IN TOUCH</a>
+                            </div>
+                        </li>
+                        <li class="Header_Dropdown">
+                            <div class="Header_Dropdown--B">
+                                <div onclick="toggleDropdown2()">FIND PROPERTY</div>
+                                <button onclick="toggleDropdown2()" class="Header_Dropdown--Btn">&#X1f53b</button>
+                            </div>
+                            <div class="Dropdown1" id="dropdown2B">
+                                <a href="findProperty.html">FOR SALE</a>
+                                <a href="findProperty.html">FOR RENT</a>
+                            </div>
+                        </li>
+                        <li class="Header_Dropdown">
+                            <div class="Header_Dropdown--B">
+                                <div onclick="toggleDropdown3()">BECOME AN AGENT</div>
+                                <button onclick="toggleDropdown3()" class="Header_Dropdown--Btn">&#X1f53b</button>
+                            </div>
+                            <div class="Dropdown1" id="dropdown3B">
+                                <a href="Login.html">LOGIN</a>
+                                <a href="Register.html">REGISTER</a>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="postProperty_page" id="postProperty_page">
+            <div class="slideshow getInfoImg">
+                <img src="./sass/assets/Image/Build/interior2.jpg" alt="slide" class="slideImg">
+                <div class="article">
+                    <p class="imgArticle">POST A PROPERTY</p>
+                    <button class="buttonArticle"><a href="Register.html">BECOME AN AGENT</a></button>
+                </div>
+            </div>
+            <div class="Form_Content">
+                <p>
+                    Please fill out the form below with your property details providing as much information as possible
+                    including any images and a member of our team will get back to you with a market appraisal and next
+                    steps.
+                </p>
+                <section class="Form_Section">
+                    <form action="submit.php" method="get">
+                        <h2>Basic Information</h2>
+                        <div class="Form_Content--set">
+                            <label for="">Property Title*</label>
+                            <input type="text" name="Property Title" class="Form_Content--input" required>
+                        </div>
+                        <div class="Form_Content--set">
+                            <label for="">Property Status*</label>
+                            <select name="Property Status" class="Form_Content--input" required>
+                                <option value=""></option>
+                                <optgroup>
+                                    <option value="">For Sale</option>
+                                    <option value="">For Rent</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="Form_Content--set">
+                            <label for="">Property Type*</label>
+                            <select name="" class="Form_Content--input" required>
+                                <option value=""></option>
+                                <optgroup label="Land">
+                                    <option value="">Commercial</option>
+                                    <option value="">Residential</option>
+                                </optgroup>
+                                <optgroup label="Building">
+                                    <option value="">Duplex</option>
+                                    <option value="">Bungalow</option>
+                                    <option value="">Blocks of flats</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="Form_Content--set">
+                            <label for="">Price*</label>
+                            <input type="text" name="Price" class="Form_Content--input" required>
+                        </div>
+                        <div class="Form_Content--set">
+                            <label for="">Number of Bedroom</label>
+                            <select name="Number of Bedroom" class="Form_Content--input">
+                                <option value=""></option>
+                                <optgroup>
+                                    <option value="">1 Bedroom</option>
+                                    <option value="">2 Bedroom</option>
+                                    <option value="">3 Bedroom</option>
+                                    <option value="">4 Bedroom</option>
+                                    <option value="">5 Bedroom</option>
+                                    <option value="">6 Bedroom</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="Form_Content--set">
+                            <label for="">Number of Bathroom</label>
+                            <select name="Number of Bathroom" class="Form_Content--input">
+                                <option value=""></option>
+                                <optgroup>
+                                    <option value="">1 Bathroom</option>
+                                    <option value="">2 Bathroom</option>
+                                    <option value="">3 Bathroom</option>
+                                    <option value="">4 Bathroom</option>
+                                    <option value="">5 Bathroom</option>
+                                    <option value="">6 Bathroom</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <h2>Property Gallery</h2>
+                        <div class="Form_Content--set">
+                            <input type="file" name="Property Gallery" class="chooseFile" required>
+                            <p class="chooseFile--A">
+                                NOTE: images should not be more than 500kb in size and in jpeg format.
+                            </p>
+                        </div>
+
+                        <h2>Location</h2>
+                        <div class="Form_Content--set">
+                            <label for="">Country*</label>
+                            <select name="Country" class="Form_Content--input" required>
+                                <optgroup>
+                                    <option value="">Choose Country</option>
+                                </optgroup>
+
+                                <optgroup label="Caribbean">
+                                    <option value="Jamaica">Jamaica</option>
+                                </optgroup>
+
+                                <optgroup label="Central Africa">
+                                    <option value="Angola">Angola</option>
+                                    <option value="Cameroon">Cameroon</option>
+                                    <option value="Central African Republic">Central African Republic</option>
+                                    <option value="Chad">Chad</option>
+                                    <option value="Democratic Republic of the Congo">Democratic Republic of the Congo
+                                    </option>
+                                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                    <option value="Gabon">Gabon</option>
+                                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                </optgroup>
+
+                                <optgroup label="Eastern Africa">
+                                    <option value="Burundi">Burundi</option>
+                                    <option value="Comoros">Comoros</option>
+                                    <option value="Djibouti">Djibouti</option>
+                                    <option value="Eritrea">Eritrea</option>
+                                    <option value="Ethiopia">Ethiopia</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="Madagascar">Madagascar</option>
+                                    <option value="Malawi">Malawi</option>
+                                    <option value="Mauritius">Mauritius</option>
+                                    <option value="Mozambique">Mozambique</option>
+                                    <option value="Rwanda">Rwanda</option>
+                                    <option value="Seychelles">Seychelles</option>
+                                    <option value="Somalia">Somalia</option>
+                                    <option value="South Sudan">South Sudan</option>
+                                    <option value="Tanzania">Tanzania</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="Zambia">Zambia</option>
+                                    <option value="Zimbabwe">Zimbabwe</option>
+                                </optgroup>
+
+                                <optgroup label="Northern Africa">
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="Libya">Libya</option>
+                                    <option value="Morocco">Morocco</option>
+                                    <option value="Sudan">Sudan</option>
+                                    <option value="Tunisia">Tunisia</option>
+                                </optgroup>
+
+                                <optgroup label="Southern Africa">
+                                    <option value="Botswana">Botswana</option>
+                                    <option value="Eswatini">Eswatini</option>
+                                    <option value="Lesotho">Lesotho</option>
+                                    <option value="Namibia">Namibia</option>
+                                    <option value="South Africa">South Africa</option>
+                                </optgroup>
+
+                                <optgroup label="Western Africa">
+                                    <option value="Benin">Benin</option>
+                                    <option value="Burkina Faso">Burkina Faso</option>
+                                    <option value="Cabo Verde">Cabo Verde</option>
+                                    <option value="Ivory Coast">Ivory Coast</option>
+                                    <option value="The Gambia">The Gambia</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Guinea">Guinea</option>
+                                    <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                    <option value="Liberia">Liberia</option>
+                                    <option value="Mali">Mali</option>
+                                    <option value="Mauritania">Mauritania</option>
+                                    <option value="Niger">Niger</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Senegal">Senegal</option>
+                                    <option value="Sierra Leone">Sierra Leone</option>
+                                    <option value="Togo">Togo</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="Form_Content--set">
+                            <label for="">Area*</label>
+                            <input type="text" name="Area" class="Form_Content--input" required>
+                        </div>
+
+                        <h2>Detailed Information</h2>
+                        <div>
+                            <textarea name="information" cols="50" rows="10" placeholder="Describe Your Property"
+                                class="textArea" required></textarea>
+                        </div>
+
+                        <h2>Contact Details</h2>
+                        <div class="Form_Content--set">
+                            <label for="">Name*</label>
+                            <input type="text" name="Name" class="Form_Content--input" required>
+                        </div>
+                        <div class="Form_Content--set">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" class="Form_Content--input" required>
+                        </div>
+                        <div class="Form_Content--set">
+                            <label for="">Phone*</label>
+                            <input type="tel" name="Phone" class="Form_Content--input" required>
+                        </div>
+                        <div class="Form_Content--set">
+                            <input type="checkbox" name="marketTrend">
+                            <label for="">Market Trend</label>
+                        </div>
+                        <div>
+                            <button type="submit" class="Form_Content--Button">Submit</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="Footer_section">
+            <div class="Footer_content">
+                <div class="Footer_content--C">
+                    <div class="Footer_sect">
+                        <h3>CONTACT US</h3>
+                        <div class="Footer_contact">
+                            <address>
+                                location: lagos, Nigeria
+                            </address>
+                            <div>
+                                <a href="mailto:">Email: africhoice@gmail</a>
+                            </div>
+                            <div>
+                                <a href="tel:+">Tel: +23408144426644</a>
+                            </div>
+                        </div>
+
+                        <div class="socialmedia">
+                            <a href="" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                            <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="Footer_links">
+                        <h3>Useful Links</h3>
+                        <div class="Footer_links--C">
+                            <div>
+                                <li><a href="landing.html">HOME</a></li>
+                                <li><a href="marketTrend.html">MARKET TREND</a></li>
+                                <li><a href="verifiedAgent.html">VERIFIED AGENTS</a></li>
+                                <li><a href="Postproperty.html">POST A PROPERTY </a></li>
+                                <li><a href="Region.html">REGION</a></li>
+                                <li><a href="aboutUs.html">OUR SERVICE</a></li>
+                            </div>
+                            <div>
+                                <li> <a href="aboutUs.html">MEDIA</a></li>
+                                <li><a href="aboutUs.html">GET IN TOUCH</a></li>
+                                <li><a href="findProperty.html">FOR SALE</a></li>
+                                <li><a href="findProperty.html">FOR RENT</a></li>
+                                <li><a href="Login.html">LOGIN</a></li>
+                                <li> <a href="Register.html">REGISTER</a> </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer_content--C">
+                    <div class="Footer_links">
+                        <h3>Regions</h3>
+                        <div>
+                            <li><a href="">Caribbean</a></li>
+                            <li><a href="">Central Or Middle Africa</a></li>
+                            <li><a href="">Eastern Africa</a></li>
+                            <li><a href="">Northern Africa</a></li>
+                            <li><a href="">Southern Africa</a></li>
+                            <li><a href="">Western Africa</a></li>
+                        </div>
+                    </div>
+                    <div class="Footer_cont">
+                        <h3>SUBSCRIBE</h3>
+                        <p>Sign up to our newsletter</p>
+                        <form action="form.php" method="get">
+                            <input type="text" name="SUBSCRIBE" placeholder="Enter Email" required><br>
+                            <button>SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="Footer_foot">Afri-choice Property Ltd Africa. © 2023. All Rights Reserved.</p>
+        </section>
+    </footer>
+    <script src="Js Style/Style.js"></script>
+    <script src="Js Style/Style1.js"></script>
+</body>
+
+</html>

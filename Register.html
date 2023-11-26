@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afri-Choice Register_page</title>
+    <link rel="shortcut icon" href="./sass/assets/Image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="light_mode">
+    <header>
+        <section class="Header_section">
+            <div>
+                <img src="./sass/assets/Image/logo.png" alt="Logo" class="Header_logo">
+            </div>
+            <nav class="Header_nav">
+                <div class="Header_links">
+                    <li><a href="landing.html">HOME</a></li>
+                    <li><a href="marketTrend.html">MARKET TREND</a></li>
+                    <li><a href="verifiedAgent.html">VERIFIED AGENTS</a></li>
+                    <li><a href="Postproperty.html">POST A PROPERTY </a></li>
+                    <li><a href="Region.html">REGION</a></li>
+                    <li class="Header_Dropdown">
+                        <a href="#">WHO WE ARE &#X1f53b</a>
+                        <div class="Dropdown dropdown1">
+                            <a href="aboutUs.html">OUR SERVICE</a>
+                            <a href="aboutUs.html">MEDIA</a>
+                            <a href="aboutUs.html">GET IN TOUCH</a>
+                        </div>
+                    </li>
+                    <li class="Header_Dropdown">
+                        <a href="#">FIND PROPERTY &#X1f53b</a>
+                        <div class="Dropdown dropdown2">
+                            <a href="findProperty.html">FOR SALE</a>
+                            <a href="findProperty.html">FOR RENT</a>
+                        </div>
+                    </li>
+                    <li class="Header_Dropdown">
+                        <a href="#">BECOME AN AGENT &#X1f53b</a>
+                        <div class="Dropdown dropdown3">
+                            <a href="Login.html">LOGIN</a>
+                            <a href="Register.html">REGISTER</a>
+                        </div>
+                    </li>
+                    <section class="Color_mode--btn">
+                        <button type="button" onclick="toggleMode()" id="dark_mode" class="dark_mode--btn"> 🌙</button>
+                    </section>
+                </div>
+            </nav>
+        </section>
+        <section class="Navsection">
+            <div>
+                <img src="./sass/assets/Image/logo.png" alt="Logo" class="Header_logo">
+            </div>
+            <nav class="hambuger">
+                <div class="bar_icon--sect">
+                    <div class="menu-icon" onclick="toggleList()" id="bars">
+                        <div class="bar bar1"></div>
+                        <div class="bar bar2"></div>
+                    </div>
+                    <section class="Color_mode--btn">
+                        <button type="button" onclick="toggleMode()" id="dark_mode1" class="dark_mode--btn"> 🌙</button>
+                    </section>
+                </div>
+                <div id="nav" class="nav">
+                    <div class="dropdown-content">
+                        <li><a href="landing.html">HOME</a></li>
+                        <li><a href="marketTrend.html">MARKET TREND</a></li>
+                        <li><a href="verifiedAgent.html">VERIFIED AGENTS</a></li>
+                        <li><a href="Postproperty.html">POST A PROPERTY </a></li>
+                        <li><a href="Region.html">REGION</a></li>
+                        <li class="Header_Dropdown">
+                            <div class="Header_Dropdown--B">
+                                <div onclick="toggleDropdown1()">WHO WE ARE</div>
+                                <button onclick="toggleDropdown1()" class="Header_Dropdown--Btn">&#X1f53b</button>
+                            </div>
+                            <div class="Dropdown1" id="dropdown1B">
+                                <a href="aboutUs.html">OUR SERVICE</a>
+                                <a href="aboutUs.html">MEDIA</a>
+                                <a href="aboutUs.html">GET IN TOUCH</a>
+                            </div>
+                        </li>
+                        <li class="Header_Dropdown">
+                            <div class="Header_Dropdown--B">
+                                <div onclick="toggleDropdown2()">FIND PROPERTY</div>
+                                <button onclick="toggleDropdown2()" class="Header_Dropdown--Btn">&#X1f53b</button>
+                            </div>
+                            <div class="Dropdown1" id="dropdown2B">
+                                <a href="findProperty.html">FOR SALE</a>
+                                <a href="findProperty.html">FOR RENT</a>
+                            </div>
+                        </li>
+                        <li class="Header_Dropdown">
+                            <div class="Header_Dropdown--B">
+                                <div onclick="toggleDropdown3()">BECOME AN AGENT</div>
+                                <button onclick="toggleDropdown3()" class="Header_Dropdown--Btn">&#X1f53b</button>
+                            </div>
+                            <div class="Dropdown1" id="dropdown3B">
+                                <a href="Login.html">LOGIN</a>
+                                <a href="Register.html">REGISTER</a>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="Register_page" id="Register_page">
+            <div class="slideshow getInfoImg">
+                <img src="./sass/assets/Image/Build/interior2.jpg" alt="slide" class="slideImg">
+                <div class="article">
+                    <p class="imgArticle">BECOME AN AGENT</p>
+                    <button class="buttonArticle"><a href="Postproperty.html">POST A PROPERTY</a></button>
+                </div>
+            </div>
+            <div class="Form_Section">
+                <section class="Form_Content">
+                    <div>
+                        <h2>Create Account</h2>
+                        Enter your details to create an account with Afri-Choice properties.
+                    </div>
+                    <form action="process_form.php" method="post" id="myForm">
+                        <div>
+                            <div class="Form_Content--set">
+                                <label for="Name">Name*</label>
+                                <input type="text" name="Name" class="Form_Content--input" required>
+                            </div>
+                            <div class="Form_Content--set">
+                                <label for="email">Email*</label>
+                                <input type="email" name="email" class="Form_Content--input" required>
+                            </div>
+                            <div class="Form_Content--set">
+                                <label for="Phone_number">Phone Number*</label>
+                                <input type="tel" name="Phone_number" class="Form_Content--input" required>
+                            </div>
+                            <div class="Form_Content--set">
+                                <label for="address">Address*</label>
+                                <input type="text" name="address" class="Form_Content--input" required>
+                            </div>
+                            <div class="Form_Content--set">
+                                <label for="Country">Country*</label>
+                                <input type="text" name="Country" class="Form_Content--input" required>
+                            </div>
+                            <div class="Form_Content--set">
+                                <label for="">Account Type*</label>
+                                <div>
+                                    <input type="radio" name="" class="Form_Content--radio">
+                                    <label for="">For Individual</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="" class="Form_Content--radio">
+                                    <label for="">For Agent</label>
+                                </div>
+                            </div>
+                            <div class="Form_Content--set password">
+                                <label for="Password">Password*</label>
+                                <div class="showhide_password" onclick="toggleseePassword('password')">&#X1f441</div>
+                                <input type="password" name="password" class="Form_Content--input" id="password"
+                                    required>
+                            </div>
+                            <em id="passAlert" class="Alert"></em>
+                            <div class="Form_Content--set password">
+                                <label for="Confirm Password">Confirm Password*</label>
+                                <div class=" showhide_password" onclick="toggleseePassword('ConfirmPassword')">&#X1f441
+                                </div>
+                                <input type="password" name="Confirm password" class="Form_Content--input"
+                                    id="ConfirmPassword" required>
+                            </div>
+                            <em id="confirm_passAlert" class="Alert"></em>
+                            <div class="Form_Content--set Form_Content--link">
+                                <input type="checkbox" name="Agreement" required>
+                                <label for="">I agree to the <a href="">Terms</a>,<a href="">Private policies</a> and <a
+                                        href="">Conditions</a></label>
+                            </div>
+                            <div>
+                                <button type="submit" class="Form_Content--Button">Register</button>
+                            </div>
+                            <div class="Form_Content--link">
+                                <p>Already have an account? <a href="Login.html">login here</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="Footer_section">
+            <div class="Footer_content">
+                <div class="Footer_content--C">
+                    <div class="Footer_sect">
+                        <h3>CONTACT US</h3>
+                        <div class="Footer_contact">
+                            <address>
+                                location: lagos, Nigeria
+                            </address>
+                            <div>
+                                <a href="mailto:">Email: africhoice@gmail</a>
+                            </div>
+                            <div>
+                                <a href="tel:+">Tel: +23408144426644</a>
+                            </div>
+                        </div>
+
+                        <div class="socialmedia">
+                            <a href="" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                            <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="Footer_links">
+                        <h3>Useful Links</h3>
+                        <div class="Footer_links--C">
+                            <div>
+                                <li><a href="landing.html">HOME</a></li>
+                                <li><a href="marketTrend.html">MARKET TREND</a></li>
+                                <li><a href="verifiedAgent.html">VERIFIED AGENTS</a></li>
+                                <li><a href="Postproperty.html">POST A PROPERTY </a></li>
+                                <li><a href="Region.html">REGION</a></li>
+                                <li><a href="aboutUs.html">OUR SERVICE</a></li>
+                            </div>
+                            <div>
+                                <li> <a href="aboutUs.html">MEDIA</a></li>
+                                <li><a href="aboutUs.html">GET IN TOUCH</a></li>
+                                <li><a href="findProperty.html">FOR SALE</a></li>
+                                <li><a href="findProperty.html">FOR RENT</a></li>
+                                <li><a href="Login.html">LOGIN</a></li>
+                                <li> <a href="Register.html">REGISTER</a> </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer_content--C">
+                    <div class="Footer_links">
+                        <h3>Regions</h3>
+                        <div>
+                            <li><a href="">Caribbean</a></li>
+                            <li><a href="">Central Or Middle Africa</a></li>
+                            <li><a href="">Eastern Africa</a></li>
+                            <li><a href="">Northern Africa</a></li>
+                            <li><a href="">Southern Africa</a></li>
+                            <li><a href="">Western Africa</a></li>
+                        </div>
+                    </div>
+                    <div class="Footer_cont">
+                        <h3>SUBSCRIBE</h3>
+                        <p>Sign up to our newsletter</p>
+                        <form action="form.php" method="get">
+                            <input type="text" name="SUBSCRIBE" placeholder="Enter Email" required><br>
+                            <button>SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="Footer_foot">Afri-choice Property Ltd Africa. © 2023. All Rights Reserved.</p>
+        </section>
+    </footer>
+    <script src="Js Style/Style.js"></script>
+    <script src="Js Style/Style1.js"></script>
+</body>
+
+</html>

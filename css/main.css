@@ -1,0 +1,989 @@
+/* The form section */
+.Form_Content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.Form_Section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.Form_Content--set {
+  margin-top: 20px;
+}
+.Form_Content--set label {
+  font-weight: bold;
+}
+
+.Form_Content--input {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid transparent;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.Form_Content--radio {
+  margin-top: 10px;
+}
+
+.textArea {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid transparent;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.chooseFile {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid transparent;
+  height: 20px;
+  padding: 5px;
+}
+
+.chooseFile--A {
+  font-size: 10px;
+  color: red;
+}
+
+.Form_Section div select {
+  border: transparent;
+}
+
+.Form_Content--Button {
+  background-color: rgb(14, 14, 100);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #fff;
+  height: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.Form_Content a {
+  color: blue;
+}
+
+.Form_Content a:hover {
+  color: red;
+}
+
+.Form_Content--link {
+  text-align: center;
+  padding: 10px 0;
+}
+.Form_Content--link a {
+  font-size: 14px;
+}
+
+.Form_Content--link1 {
+  text-align: right;
+  padding: 7px 0;
+  font-size: 14px;
+}
+
+.password {
+  position: relative;
+}
+
+.showhide_password {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  right: 3%;
+}
+
+.Alert {
+  color: red;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .Form_Section {
+    display: block;
+    margin: 30px;
+    width: 80%;
+    margin-top: 40px;
+  }
+}
+/* The slide-show */
+.slide_section {
+  position: relative;
+}
+
+.slideshow input[type=radio] {
+  display: none;
+}
+
+.slideshow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  height: 400px;
+  width: 80%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.slide-container {
+  display: grid;
+  grid-template-columns: repeat(10, 100%);
+  transform: translateX(0);
+  transition: transform 1s ease;
+}
+
+.marketTrend_slideshow {
+  border: 3px solid rgb(14, 14, 100);
+}
+
+.slideImg {
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+  float: left;
+  opacity: 0.9;
+}
+
+.navigation {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 0;
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.navigation label {
+  background: #333;
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: width 0.3s ease;
+}
+
+#slide1:checked ~ .slide-container {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slide-container {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slide-container {
+  transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slide-container {
+  transform: translateX(-300%);
+}
+
+#slide5:checked ~ .slide-container {
+  transform: translateX(-400%);
+}
+
+#slide6:checked ~ .slide-container {
+  transform: translateX(-500%);
+}
+
+#slide7:checked ~ .slide-container {
+  transform: translateX(-600%);
+}
+
+#slide8:checked ~ .slide-container {
+  transform: translateX(-700%);
+}
+
+#slide9:checked ~ .slide-container {
+  transform: translateX(-800%);
+}
+
+#slide10:checked ~ .slide-container {
+  transform: translateX(-900%);
+}
+
+#slide1:checked ~ .navigation label:nth-child(1),
+#slide2:checked ~ .navigation label:nth-child(2),
+#slide3:checked ~ .navigation label:nth-child(3),
+#slide4:checked ~ .navigation label:nth-child(4),
+#slide5:checked ~ .navigation label:nth-child(5),
+#slide6:checked ~ .navigation label:nth-child(6),
+#slide7:checked ~ .navigation label:nth-child(7),
+#slide8:checked ~ .navigation label:nth-child(8),
+#slide9:checked ~ .navigation label:nth-child(9),
+#slide10:checked ~ .navigation label:nth-child(10) {
+  background: rgb(215, 183, 178);
+}
+
+/* Login/ Register/ Post Property page */
+.article {
+  text-align: center;
+  position: absolute;
+  left: 38%;
+  top: 20%;
+}
+
+.article1 {
+  text-align: center;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+
+.imgArticle {
+  font-family: fantasy;
+  font-weight: bolder;
+  color: #fff;
+  height: 50px;
+  font-size: 40px;
+}
+
+.buttonArticle {
+  background-color: rgb(14, 14, 100);
+  border: 1px solid rgb(14, 14, 100);
+  font-family: fantasy;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.getInfoImg {
+  position: relative;
+}
+.getInfoImg a {
+  color: red;
+}
+
+.buttonArticle {
+  animation: blink 5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: rgb(37, 37, 159);
+  }
+  25% {
+    background-color: rgb(9, 9, 114);
+  }
+  50% {
+    background-color: rgb(44, 44, 180);
+  }
+  100% {
+    background-color: rgb(14, 14, 180);
+  }
+}
+@media screen and (max-width: 850px) {
+  .article1 {
+    left: 20%;
+    top: 15%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .article {
+    left: 30%;
+    top: 20%;
+  }
+  .article1 {
+    left: 10%;
+    top: 15%;
+  }
+  .article1 input,
+  .article1 select,
+  .article1 button {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .article {
+    left: 29%;
+    top: 20%;
+  }
+  .imgArticle {
+    height: 50px;
+    font-size: 35px;
+  }
+  .buttonArticle {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navigation label {
+    width: 6px;
+    height: 6px;
+  }
+  .VA {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .article {
+    left: 20%;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navigation label {
+    width: 5px;
+    height: 5px;
+    margin: 0 2px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .article {
+    left: 15%;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 310px) {
+  .article {
+    left: 12%;
+    top: 20%;
+  }
+  .imgArticle {
+    height: 40px;
+    font-size: 32px;
+  }
+  .buttonArticle {
+    width: 60%;
+    font-size: 18px;
+    padding: 5px;
+  }
+  .VA {
+    font-size: 23px;
+  }
+}
+/* The Search_bar */
+.Search_bar {
+  position: relative;
+  height: 100%;
+}
+
+.Search_section,
+.Search_bar--G,
+.Search_container {
+  margin: 20px 0;
+  border: 3px solid rgb(227, 133, 133);
+  background-color: rgb(227, 133, 133);
+}
+
+.Search_bar--C {
+  width: 60%;
+  height: 40px;
+}
+
+.Search_bar--Alert {
+  text-align: center;
+}
+
+.Dsearch-results {
+  background-color: #fff;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  width: 40%;
+  padding: 15px 10px;
+  transition: width 0.3s ease;
+}
+
+.Search_section {
+  position: absolute;
+  border-radius: 10px;
+  width: 50%;
+  top: 80%;
+  left: 25%;
+}
+
+option,
+optgroup {
+  font-size: 12px;
+}
+
+.Search_bar--G,
+.Search_button {
+  display: flex;
+  justify-content: center;
+}
+
+.Search_container input,
+.Search_container select {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.08);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid transparent;
+}
+.Search_container input {
+  width: 24%;
+  height: 30px;
+}
+.Search_container select {
+  width: 25%;
+  height: 35px;
+}
+
+.S_C--2 input {
+  margin-top: 10px;
+}
+
+.Search_container--C {
+  display: flex;
+  gap: 50px;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.Search_button button {
+  background-color: rgb(14, 14, 100);
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  width: 30%;
+  height: 35px;
+}
+
+.Search_bar--G button {
+  background-color: rgb(14, 14, 100);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Find Property */
+.Search_container--FP {
+  margin-top: 20px;
+}
+.Search_container--FP input,
+.Search_container--FP select {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 10px;
+}
+.Search_container--FP input {
+  width: 24%;
+  height: 30px;
+}
+.Search_container--FP select {
+  width: 25%;
+  height: 35px;
+}
+.Search_container--FP button {
+  border: none;
+  margin-top: 20px;
+  width: 30%;
+  height: 35px;
+  background-color: rgb(14, 14, 100);
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .slideshow {
+    width: 100%;
+  }
+  .Search_section {
+    width: 70%;
+    left: 15%;
+  }
+  .article {
+    left: 36%;
+    top: 20%;
+  }
+  .article1 {
+    left: 27%;
+    top: 15%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Search_S {
+    display: none;
+  }
+  .Search_container--C {
+    display: block;
+    text-align: center;
+  }
+  .Search_container--FP {
+    margin-top: 20px;
+    border: 1px solid transparent;
+  }
+  .Search_container--FP select {
+    margin-top: 10px;
+    width: 80%;
+    height: 35px;
+  }
+  .Search_container--FP input {
+    margin-top: 10px;
+    width: 80%;
+    height: 30px;
+  }
+  .Search_bar--G {
+    background-color: transparent;
+    border: transparent;
+  }
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Main_section {
+  position: relative;
+}
+
+.Main_content {
+  font-family: fantasy;
+  margin-top: 300px;
+  text-align: center;
+}
+
+/* The footer */
+.Footer_section {
+  background-color: rgb(14, 14, 100);
+  color: #fff;
+  border: none;
+  margin-top: 30px;
+}
+
+.Footer_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Footer_content--C {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Footer_links--C {
+  display: flex;
+  gap: 50px;
+}
+
+.Footer_links--C button {
+  color: #fff;
+}
+
+.Footer_section a {
+  color: #fff;
+}
+
+.Footer_section li {
+  padding-top: 10px;
+}
+
+.Footer_section input {
+  height: 30px;
+  width: 80%;
+}
+
+.Footer_cont button {
+  border: none;
+  margin-top: 10px;
+  height: 35px;
+  width: 82%;
+  background-color: red;
+}
+
+.Footer_foot {
+  text-align: center;
+}
+
+.socialmedia a {
+  padding-left: 10px;
+}
+
+.socialmedia {
+  padding-top: 10px;
+}
+
+.Footer_contact div {
+  padding-top: 10px;
+}
+
+.Footer_cont {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .Footer_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: left;
+    margin-left: 10%;
+  }
+  .Footer_content--C {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .Footer_cont {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Footer_links,
+  .Footer_sect {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Footer_cont {
+    text-align: center;
+  }
+  .Footer_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+/* The header */
+.Header_section {
+  position: relative;
+  z-index: 1;
+}
+
+.Header_logo {
+  height: 40px;
+  margin-left: 20px;
+}
+
+.Header_links {
+  font-family: fantasy;
+  display: grid;
+  grid-template-columns: 0.3fr repeat(3, 0.5fr) 0.3fr 0.4fr repeat(2, 0.5fr) 0.1fr;
+  padding: 15px 10px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70%;
+}
+
+.Header_links a {
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+}
+
+.Header_Dropdown:hover .dropdown1 {
+  display: block;
+}
+
+.Header_Dropdown:hover .dropdown2 {
+  display: block;
+}
+
+.Header_Dropdown:hover .dropdown3 {
+  display: block;
+}
+
+.Dropdown {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  display: none;
+  width: auto;
+  padding: 15px 10px;
+  transition: width 0.3s ease;
+}
+
+.Dropdown a {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.Dropdown a:hover {
+  transform: translateX(20px);
+}
+
+/* HAMBUGER SECTION */
+.Navsection {
+  display: none;
+}
+
+.Dropdown1 {
+  display: none;
+  width: auto;
+  padding: 15px 10px;
+  transition: width 0.3s ease;
+}
+
+.Dropdown1 a {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.bar_icon--sect {
+  display: flex;
+  gap: 20px;
+  justify-content: right;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.dropdown-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+
+.dropdown-content li a,
+.dropdown-content li div {
+  font-family: fantasy;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown-content li {
+  border-bottom: 3px solid #fff;
+}
+
+.Dropdown1 {
+  border-top: 3px solid #fff;
+}
+
+#nav {
+  display: none;
+  background-color: rgb(14, 14, 100);
+  transition: height 0.2s, width 0.1s;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 25px;
+  display: inline-block;
+  cursor: pointer;
+  clear: both;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.bar {
+  background-color: #333;
+  height: 4px;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.bar1 {
+  width: 25px;
+}
+
+.bar2 {
+  width: 15px;
+}
+
+.menu-icon.open .bar:nth-child(1) {
+  width: 20px;
+  transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+  width: 20px;
+  transform: rotate(45deg) translate(-4px, -4px);
+}
+
+.Header_Dropdown--B {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Header_Dropdown--Btn {
+  display: flex;
+  justify-content: right;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1110px) {
+  .Header_links {
+    display: grid;
+    grid-template-columns: 0.3fr repeat(3, 0.6fr) 0.3fr 0.6fr 0.7fr 0.8fr 0.2fr;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .Navsection {
+    display: block;
+  }
+  .Header_section {
+    display: none;
+  }
+}
+.Advance {
+  display: none;
+}
+
+.Advance_option {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .Advance {
+    display: block;
+  }
+}
+.Login_page {
+  position: relative;
+}
+
+.popUp {
+  display: none;
+}
+
+.Popup_section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgb(14, 14, 100);
+  background-color: rgb(14, 14, 100);
+  color: #fff;
+  height: auto;
+  width: 50%;
+  padding: 30px;
+  position: absolute;
+  top: 63%;
+  left: 25%;
+}
+
+.Popup_section button {
+  background-color: red;
+}
+
+.cancel-icon {
+  float: right;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .Popup_section {
+    display: block;
+    margin: 10px;
+    width: 60%;
+    top: 56%;
+    left: 13%;
+  }
+}
+.postProperty_page {
+  position: relative;
+}
+
+/* REGION */
+.Regions {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+}
+
+.Region_Content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.Region_section {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+.Regions img {
+  border: 1px solid rgb(14, 14, 100);
+  height: 90px;
+  width: 80%;
+}
+
+.Regions p a {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .Region_Content {
+    display: block;
+    margin: 0 10px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Region_section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+  }
+  .Regions img {
+    width: 50%;
+  }
+}
+.Register_page {
+  position: relative;
+}
+
+/* The body color mode */
+body.light_mode {
+  color: #333;
+  background-color: #fff;
+}
+
+body.dark_mode {
+  color: #fff;
+  background-color: #333;
+}
+body.dark_mode .Header_links a {
+  color: #fff;
+}
+body.dark_mode .menu-icon div {
+  background-color: red;
+}
+body.dark_mode .Dropdown {
+  background-color: #333;
+}
+body.dark_mode .Regions p a {
+  color: #fff;
+}
+
+.dark_mode--btn,
+.light_mode--btn {
+  border-radius: 30%;
+  border: none;
+  font-size: 15px;
+}
+
+.dark_mode--btn {
+  width: 40px;
+  background-color: rgb(14, 14, 100);
+}
+
+/*# sourceMappingURL=main.css.map */

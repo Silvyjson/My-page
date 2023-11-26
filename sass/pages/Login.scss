@@ -1,0 +1,44 @@
+// The Login page
+
+.Login_page {
+    position: relative;
+}
+
+.popUp {
+    display: none;
+}
+
+.Popup_section {
+    @include Display-style();
+    border: $border1 $primary-color;
+    background-color: $primary-color;
+    color: $page-color;
+    height: auto;
+    width: 50%;
+    padding: 30px;
+
+    position: absolute;
+    top: 63%;
+    left: 25%;
+}
+
+.Popup_section button {
+    background-color: red;
+}
+
+.cancel-icon {
+    float: right;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    .Popup_section {
+        display: block;
+        margin: 10px;
+        width: 60%;
+        top: 56%;
+        left: 13%;
+    }
+}

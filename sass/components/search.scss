@@ -1,0 +1,193 @@
+/* The Search_bar */
+
+.Search_bar {
+    position: relative;
+    height: 100%;
+}
+
+.Search_section,
+.Search_bar--G,
+.Search_container {
+    margin: 20px 0;
+    border: 3px solid rgb(227, 133, 133);
+    background-color: rgb(227, 133, 133);
+}
+
+.Search_bar--C {
+    width: 60%;
+    height: 40px;
+
+}
+
+.Search_bar--Alert {
+    text-align: center;
+}
+
+.Dsearch-results {
+    background-color: $page-color;
+    box-shadow: $box-shadow;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    width: 40%;
+    padding: 15px 10px;
+    transition: width 0.3s ease;
+}
+
+.Search_section {
+    position: absolute;
+    border-radius: 10px;
+    width: 50%;
+    top: 80%;
+    left: 25%;
+}
+
+option,
+optgroup {
+    font-size: 12px;
+}
+
+.Search_bar--G,
+.Search_button {
+    display: flex;
+    justify-content: center;
+}
+
+.Search_container {
+
+    input,
+    select {
+        @include input-styles1($box-shadow, $input-bg-color, $border);
+    }
+
+
+    input {
+        width: 24%;
+        height: $input-height;
+    }
+
+    select {
+        width: 25%;
+        height: $select-height;
+    }
+}
+
+.S_C--2 input {
+    margin-top: 10px;
+}
+
+.Search_container--C {
+    display: flex;
+    gap: 50px;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.Search_button button {
+    background-color: $primary-color;
+    color: $page-color;
+    border: none;
+    margin-top: 20px;
+    width: 30%;
+    height: 35px;
+}
+
+.Search_bar--G button {
+    background-color: $primary-color;
+    color: $page-color;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Find Property */
+
+.Search_container--FP {
+
+    margin-top: 20px;
+
+    input,
+    select {
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.08);
+        border: 1px solid transparent;
+        background-color: rgba(255, 255, 255, 0.9);
+        margin-top: 10px;
+    }
+
+    input {
+        width: 24%;
+        height: 30px;
+    }
+
+    select {
+        width: 25%;
+        height: 35px;
+    }
+
+    button {
+        border: none;
+        margin-top: 20px;
+        width: 30%;
+        height: 35px;
+        background-color: rgb(14, 14, 100);
+        color: white;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .slideshow {
+        width: $primary-width;
+    }
+
+    .Search_section {
+        width: 70%;
+        left: 15%;
+    }
+
+    .article {
+        left: 36%;
+        top: 20%;
+    }
+
+    .article1 {
+        left: 27%;
+        top: 15%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .Search_S {
+        display: none;
+    }
+
+    .Search_container--C {
+        display: block;
+        text-align: center;
+    }
+
+    .Search_container--FP {
+        margin-top: 20px;
+        border: $border;
+
+        select {
+            margin-top: 10px;
+            width: 80%;
+            height: 35px;
+        }
+
+        input {
+            margin-top: 10px;
+            width: 80%;
+            height: 30px;
+        }
+    }
+
+    .Search_bar--G {
+        background-color: $secondary-color;
+        border: $secondary-color;
+    }
+}

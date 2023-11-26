@@ -1,0 +1,54 @@
+/* REGION */
+
+.Regions {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+.Region_Content {
+    @include Display-style();
+    width: 80%;
+}
+
+.Region_section {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
+.Regions img {
+    border: $border1 $primary-color;
+    height: 90px;
+    width: 80%
+}
+
+.Regions p a {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .Region_Content {
+        display: block;
+        margin: 0 10px;
+        width: $primary-width;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .Region_section {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .Regions img {
+        width: 50%
+    }
+}
