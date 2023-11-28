@@ -16,7 +16,7 @@
 .Search_bar--C {
     width: 60%;
     height: 40px;
-
+    border-radius: 10px 0 0 10px;
 }
 
 .Search_bar--Alert {
@@ -145,16 +145,6 @@ optgroup {
     .Search_section {
         width: 70%;
         left: 15%;
-    }
-
-    .article {
-        left: 36%;
-        top: 20%;
-    }
-
-    .article1 {
-        left: 27%;
-        top: 15%;
     }
 }
 

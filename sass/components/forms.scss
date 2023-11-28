@@ -95,8 +95,11 @@
 .showhide_password {
     cursor: pointer;
     position: absolute;
-    top: 55%;
+    top: 60%;
     right: 3%;
+    height: 20px;
+    width: 20px;
+    opacity: 0.5;
 }
 
 .Alert {

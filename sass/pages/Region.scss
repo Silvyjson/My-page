@@ -43,12 +43,13 @@
 
     .Region_section {
         display: flex;
-        flex-direction: column;
+        height: 150px;
         gap: 50px;
-        justify-content: center;
+        justify-content: left;
+        overflow-y: scroll;
     }
 
     .Regions img {
-        width: 50%
+        width: 100px
     }
 }

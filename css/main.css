@@ -102,8 +102,11 @@
 .showhide_password {
   cursor: pointer;
   position: absolute;
-  top: 55%;
+  top: 60%;
   right: 3%;
+  height: 20px;
+  width: 20px;
+  opacity: 0.5;
 }
 
 .Alert {
@@ -233,18 +236,22 @@
 }
 
 /* Login/ Register/ Post Property page */
-.article {
-  text-align: center;
+.article, .article1 {
+  border: 1px solid red;
+  height: 400px;
+  width: 100%;
   position: absolute;
-  left: 38%;
-  top: 20%;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .article1 {
-  text-align: center;
-  position: absolute;
-  left: 30%;
-  top: 10%;
+  padding-top: 60px;
+}
+.article1 input,
+.article1 select,
+.article1 button {
+  width: 50%;
 }
 
 .imgArticle {
@@ -260,7 +267,7 @@
   border: 1px solid rgb(14, 14, 100);
   font-family: fantasy;
   border-radius: 10px;
-  width: 100%;
+  width: 30%;
   height: 50px;
   padding: 15px;
   font-size: 20px;
@@ -292,38 +299,20 @@
     background-color: rgb(14, 14, 180);
   }
 }
-@media screen and (max-width: 850px) {
-  .article1 {
-    left: 20%;
-    top: 15%;
-  }
-}
 @media screen and (max-width: 700px) {
-  .article {
-    left: 30%;
-    top: 20%;
-  }
-  .article1 {
-    left: 10%;
-    top: 15%;
-  }
   .article1 input,
   .article1 select,
   .article1 button {
-    width: 70%;
+    width: 60%;
   }
 }
 @media screen and (max-width: 600px) {
-  .article {
-    left: 29%;
-    top: 20%;
-  }
   .imgArticle {
     height: 50px;
     font-size: 35px;
   }
   .buttonArticle {
-    width: 80%;
+    width: 50%;
     font-size: 20px;
   }
 }
@@ -336,12 +325,6 @@
     font-size: 25px;
   }
 }
-@media screen and (max-width: 450px) {
-  .article {
-    left: 20%;
-    top: 20%;
-  }
-}
 @media screen and (max-width: 400px) {
   .navigation label {
     width: 5px;
@@ -349,17 +332,7 @@
     margin: 0 2px;
   }
 }
-@media screen and (max-width: 360px) {
-  .article {
-    left: 15%;
-    top: 20%;
-  }
-}
-@media screen and (max-width: 310px) {
-  .article {
-    left: 12%;
-    top: 20%;
-  }
+@media screen and (max-width: 355px) {
   .imgArticle {
     height: 40px;
     font-size: 32px;
@@ -390,6 +363,7 @@
 .Search_bar--C {
   width: 60%;
   height: 40px;
+  border-radius: 10px 0 0 10px;
 }
 
 .Search_bar--Alert {
@@ -507,14 +481,6 @@ optgroup {
     width: 70%;
     left: 15%;
   }
-  .article {
-    left: 36%;
-    top: 20%;
-  }
-  .article1 {
-    left: 27%;
-    top: 15%;
-  }
 }
 @media screen and (max-width: 550px) {
   .Search_S {
@@ -561,6 +527,11 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 550px) {
+  .Main_content {
+    margin-top: 100px;
+  }
+}
 /* The footer */
 .Footer_section {
   background-color: rgb(14, 14, 100);
@@ -838,6 +809,13 @@ a {
     display: none;
   }
 }
+.Advance_Search_bar {
+  border: 1px solid rgb(14, 14, 100);
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
 .Advance {
   display: none;
 }
@@ -939,12 +917,13 @@ a {
 @media screen and (max-width: 550px) {
   .Region_section {
     display: flex;
-    flex-direction: column;
+    height: 150px;
     gap: 50px;
-    justify-content: center;
+    justify-content: left;
+    overflow-y: scroll;
   }
   .Regions img {
-    width: 50%;
+    width: 100px;
   }
 }
 .Register_page {
