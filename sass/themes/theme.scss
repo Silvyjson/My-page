@@ -28,14 +28,13 @@ body.dark_mode {
     }
 }
 
-.dark_mode--btn,
-.light_mode--btn {
-    border-radius: 30%;
+.dark_mode--btn{
+    border-radius: 50%;
     border: none;
     font-size: 15px;
 }
 
 .dark_mode--btn {
-    width: 40px;
-    background-color: $primary-color;
+    height: 30px;
+    width: 30px;
 }

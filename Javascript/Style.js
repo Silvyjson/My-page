@@ -94,8 +94,6 @@ function toggleDropdown3(){
 
 function toggleMode() {
 
-  let originalContent = " 🌙";
-
     const body = document.body;
     body.classList.toggle('dark_mode');
     body.classList.toggle('light_mode');
@@ -103,11 +101,17 @@ function toggleMode() {
   let darkMode = document.getElementById("dark_mode");
   let darkModeN = document.getElementById("dark_mode1");
 
-  if (darkMode.innerHTML === originalContent) {
-    darkModeN.innerHTML = "<span class='light_mode--btn'>☀️</span>";
-    darkMode.innerHTML = "<span class='light_mode--btn'>☀️</span>";
-  } else {
-    darkModeN.innerHTML = originalContent;
-    darkMode.innerHTML = originalContent;
+  let light_Mode = "./sass/assets/Image/theme/lightMode-icon.png"
+  let dark_Mode = "./sass/assets/Image/theme/darkMode-icon.png"
+
+  if (darkMode.src.endsWith('darkMode-icon.png')) {
+    
+    darkModeN.src = light_Mode;
+    darkMode.src = light_Mode;
+  } 
+  
+  else {
+    darkModeN.src = dark_Mode;
+    darkMode.src = dark_Mode;
   }
 };

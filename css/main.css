@@ -237,7 +237,7 @@
 
 /* Login/ Register/ Post Property page */
 .article, .article1 {
-  border: 1px solid red;
+  border: 1px solid transparent;
   height: 400px;
   width: 100%;
   position: absolute;
@@ -255,7 +255,7 @@
 }
 
 .imgArticle {
-  font-family: fantasy;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: bolder;
   color: #fff;
   height: 50px;
@@ -265,7 +265,7 @@
 .buttonArticle {
   background-color: rgb(14, 14, 100);
   border: 1px solid rgb(14, 14, 100);
-  font-family: fantasy;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   border-radius: 10px;
   width: 30%;
   height: 50px;
@@ -332,7 +332,7 @@
     margin: 0 2px;
   }
 }
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 363px) {
   .imgArticle {
     height: 40px;
     font-size: 32px;
@@ -522,7 +522,7 @@ a {
 }
 
 .Main_content {
-  font-family: fantasy;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-top: 300px;
   text-align: center;
 }
@@ -555,7 +555,7 @@ a {
 
 .Footer_links--C {
   display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 
 .Footer_links--C button {
@@ -618,6 +618,9 @@ a {
   .Footer_cont {
     text-align: left;
   }
+  .Footer_foot {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 550px) {
   .Footer_links,
@@ -625,6 +628,12 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+  }
+  .Footer_links--C {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
   }
   .Footer_cont {
     text-align: center;
@@ -633,6 +642,9 @@ a {
     display: flex;
     flex-direction: column;
     margin-left: 0;
+  }
+  .Footer_foot {
+    font-size: 10px;
   }
 }
 /* The header */
@@ -647,7 +659,7 @@ a {
 }
 
 .Header_links {
-  font-family: fantasy;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   display: grid;
   grid-template-columns: 0.3fr repeat(3, 0.5fr) 0.3fr 0.4fr repeat(2, 0.5fr) 0.1fr;
   padding: 15px 10px 0 0;
@@ -729,7 +741,7 @@ a {
 
 .dropdown-content li a,
 .dropdown-content li div {
-  font-family: fantasy;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #fff;
   cursor: pointer;
 }
@@ -913,6 +925,9 @@ a {
     margin: 0 10px;
     width: 100%;
   }
+  .Regions {
+    margin: 10px;
+  }
 }
 @media screen and (max-width: 550px) {
   .Region_section {
@@ -923,7 +938,7 @@ a {
     overflow-y: scroll;
   }
   .Regions img {
-    width: 100px;
+    width: 110px;
   }
 }
 .Register_page {
@@ -953,16 +968,15 @@ body.dark_mode .Regions p a {
   color: #fff;
 }
 
-.dark_mode--btn,
-.light_mode--btn {
-  border-radius: 30%;
+.dark_mode--btn {
+  border-radius: 50%;
   border: none;
   font-size: 15px;
 }
 
 .dark_mode--btn {
-  width: 40px;
-  background-color: rgb(14, 14, 100);
+  height: 30px;
+  width: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

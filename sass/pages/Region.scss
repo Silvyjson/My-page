@@ -37,6 +37,10 @@
         margin: 0 10px;
         width: $primary-width;
     }
+
+    .Regions{
+        margin: 10px;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -50,6 +54,6 @@
     }
 
     .Regions img {
-        width: 100px
+        width: 110px
     }
 }

@@ -115,7 +115,7 @@
 
 
 .article, .article1 {
-    border: 1px solid red;
+    border: 1px solid transparent;
     height: 400px;
     width: 100%;
     position: absolute;
@@ -228,7 +228,7 @@
 }
 
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 363px) {
    
     .imgArticle {
         height: 40px;

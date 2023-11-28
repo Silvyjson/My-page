@@ -22,7 +22,7 @@
 
 .Footer_links--C {
     display: flex;
-    gap: 50px;
+    gap: 40px;
 }
 
 .Footer_links--C button {
@@ -88,6 +88,10 @@
     .Footer_cont {
         text-align: left;
     }
+
+    .Footer_foot{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -95,6 +99,13 @@
     .Footer_links,
     .Footer_sect {
         @include Display-style();
+        justify-content: center;
+    }
+
+    .Footer_links--C{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
     }
 
     .Footer_cont {
@@ -105,5 +116,9 @@
         display: flex;
         flex-direction: column;
         margin-left: 0;
+    }
+
+    .Footer_foot{
+        font-size: 10px;
     }
 }

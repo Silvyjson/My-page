@@ -9,9 +9,10 @@ setInterval(function(){
     }
 }, 5000);
 
-let AdvanceOption = document.getElementById("Advance_option")
 
 function toggleAdvanceOption(){
+
+    let AdvanceOption = document.getElementById("Advance_option")
 
     if (AdvanceOption.style.display === "none") {
         AdvanceOption.style.display = "block";
